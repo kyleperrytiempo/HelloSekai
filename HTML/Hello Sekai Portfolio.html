@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://127.0.0.1:5500/HelloSekai.html#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio Website</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./Hello Sekai Portfolio_files/style.css">
+    <link href="./Hello Sekai Portfolio_files/css2" rel="stylesheet">
+<style>
+  .imageye-selected {
+    outline: 2px solid black !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  }
+</style></head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Hello Sekai</h1>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5500/HelloSekai.html#home">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/HelloSekai.html#projects">Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/HelloSekai.html#skills">Skills</a></li>
+                <li><a href="http://127.0.0.1:5500/HelloSekai.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home" class="home">
+
+            <h2>Welcome to my Portfolio</h2>
+            <p>
+                I am a first-year student taking Introduction to Computing.
+                This website showcases my skills, projects, and interests.
+            </p>
+
+            <div class="members">
+                <div class="member-card">
+                    <img src="./Hello Sekai Portfolio_files/2a329734-d25e-4feb-9810-ba9f1a049bab.jpg" alt="Member 1">
+                    <h3>Kyle Perry A. Tiempo</h3>
+                    <p>1st Year</p>
+                    <p>BSIT Student</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="./Hello Sekai Portfolio_files/db1533576460d122ae2eb1330ec55548.jpg" alt="Member 2">
+                    <h3>Hatsune Miku</h3>
+                    <p>A Digital Icon</p>
+                    <p>Vocaloid</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--  Projects -->
+  <section id="projects" class="projects">
+            <h2>My Projects</h2>
+
+            <div class="project-list">
+                <div class="project-card">
+                    <h3>Simple Personal Website</h3>
+                    <p>A basic HTML and CSS website created as a practice project.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Video Game Concept</h3>
+                    <p>A planned concept of a video game using Godot Game Engine.</p>
+                    <p><strong>Technologies:</strong>   Godot Game Engine, Clip Studio Paint</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Class Activity Pages</h3>
+                    <p>Compilation of activities and exercises from class.</p>
+                    <p><strong>Technologies:</strong> HTML</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" class="skills">
+            <h2>Skills &amp; Hobbies</h2>
+
+            <div class="skills-container">
+                <div>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Basic HTML</li>
+                        <li>Basic CSS</li>
+                        <li>MS Word &amp; PowerPoint</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Hobbies &amp; Interests</h3>
+                    <ul>
+                        <li>Design</li>
+                        <li>Gaming</li>
+                        <li>Coding</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- contacts -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <h5><strong>Email: </strong>kyleperrytiempo@gmail.com</h5>
+            <h5><strong>Location: </strong>Philippines</h5>
+        </section>
+
+
+    <!-- footer -->
+    <footer>
+        <h2>Thanks for visiting my Portfolio</h2>
+        <h5>Members:</h5>
+        <p>Kyle Perry A. Tiempo</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+    </main></body></html>
